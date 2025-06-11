@@ -2,9 +2,230 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Chloé</title>
+  <title>Death Note - Présentation</title>
+  <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-image: url('images_chloe/fond_dn.jpg');
+        background-size: contain; /* moins de zoom et image entière visible */
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-attachment: fixed;
+        color: #fff;
+        text-shadow: 1px 1px 2px #000;
+    }
+
+    .container {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 50px auto;
+      padding: 30px;
+      max-width: 900px;
+      border-radius: 15px;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 2em;
+      color: #ffcc00;
+    }
+    h3 {
+      font-size: 1.4em;
+      color: #ffd700;
+    }
+
+    .synopsis, .infos, .personnages {
+      margin-bottom: 35px;
+    }
+
+    .infos-table {
+      width: 100%;
+      max-width: 480px;
+      margin: 0 auto 25px auto;
+      background: rgba(20, 20, 20, 0.6);
+      border-radius: 10px;
+      border-collapse: collapse;
+      color: #fff;
+      font-size: 1em;
+      box-shadow: 0 2px 6px #0005;
+    }
+    .infos-table th, .infos-table td {
+      padding: 10px 15px;
+      border-bottom: 1px solid #333;
+    }
+    .infos-table th {
+      text-align: right;
+      color: #ffcc00;
+      width: 40%;
+    }
+    .infos-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .image-section {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+    .image-section img {
+      max-width: 70%;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 10px #0008;
+    }
+
+    .personnage {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      background: rgba(20, 20, 20, 0.5);
+      border-radius: 10px;
+      margin-bottom: 20px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+    .personnage img {
+      width: 110px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #0005;
+      background: #222;
+    }
+    .perso-desc {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    a {
+      display: inline-block;
+      margin-top: 25px;
+      font-size: 1.1em;
+      text-decoration: none;
+      color: #ffcc00;
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
-  <h1>Coucou123</h1>
+  <div class="container">
+    <h1>Death Note</h1>
+    <div class="image-section">
+      <!-- Image principale de l'anime -->
+      <img src="images_chloe/image_dn_principale.jpg" alt="Affiche de Death Note">
+      <p style="font-size:0.95em; color:#ccc;">images_chloe/image_dn_principale.jpg</p>
+    </div>
+
+    <!-- SYNOPSIS -->
+    <div class="synopsis">
+      <h2>Synopsis</h2>
+      <p>
+        Light Yagami, un brillant lycéen, découvre un mystérieux cahier nommé "Death Note". Ce carnet a le pouvoir de tuer toute personne dont le nom y est inscrit, à condition de connaître son visage. Guidé par un sens déformé de la justice, Light entreprend d'éliminer les criminels pour créer un "monde parfait", mais il attire rapidement l'attention d'un détective génial et énigmatique surnommé "L". Commence alors un jeu psychologique intense entre les deux prodiges.
+      </p>
+    </div>
+
+    <!-- INFOS ANIME -->
+    <div class="infos">
+      <h2>Fiche d'identité</h2>
+      <table class="infos-table">
+        <tr>
+          <th>Titre original</th>
+          <td>デスノート (Desu Nōto)</td>
+        </tr>
+        <tr>
+          <th>Auteur</th>
+          <td>Tsugumi Ōba (scénario), Takeshi Obata (dessin)</td>
+        </tr>
+        <tr>
+          <th>Studio</th>
+          <td>Madhouse</td>
+        </tr>
+        <tr>
+          <th>Genre</th>
+          <td>Thriller, Surnaturel, Policier</td>
+        </tr>
+        <tr>
+          <th>Date de sortie</th>
+          <td>2006 (Japon)</td>
+        </tr>
+        <tr>
+          <th>Episodes</th>
+          <td>37</td>
+        </tr>
+        <tr>
+          <th>Musique</th>
+          <td>Yoshihisa Hirano, Hideki Taniuchi</td>
+        </tr>
+      </table>
+      <div class="image-section">
+        <img src="images_chloe/image_dn_studio.jpg" alt="Image du studio ou logo Death Note">
+        <p style="font-size:0.95em; color:#ccc;">image_dn_studio.jpg</p>
+      </div>
+    </div>
+
+    <!-- PERSONNAGES PRINCIPAUX -->
+    <div class="personnages">
+      <h2>Personnages principaux</h2>
+      <div class="personnage">
+        <img src="images_chloe/image_light.jpg" alt="Light Yagami">
+        <div class="perso-desc">
+          <h3>Light Yagami</h3>
+          <p>
+            Étudiant modèle, Light découvre le Death Note et souhaite purifier le monde du mal, quitte à devenir lui-même un criminel sous le nom de "Kira".
+          </p>
+          <p style="font-size:0.95em; color:#ccc;">image_light.jpg</p>
+        </div>
+      </div>
+      <div class="personnage">
+        <img src="images_chloe/image_L.jpg" alt="L">
+        <div class="perso-desc">
+          <h3>L</h3>
+          <p>
+            Détective mystérieux et excentrique, L est le principal adversaire de Light. Il excelle dans la déduction et tente de percer l'identité de Kira.
+          </p>
+          <p style="font-size:0.95em; color:#ccc;">image_L.jpg</p>
+        </div>
+      </div>
+      <div class="personnage">
+        <img src="images_chloe/image_misa.jpg" alt="Misa Amane">
+        <div class="perso-desc">
+          <h3>Misa Amane</h3>
+          <p>
+            Idol et grande admiratrice de Kira, elle obtient aussi un Death Note et joue un rôle clé dans l'histoire, motivée par son amour pour Light.
+          </p>
+          <p style="font-size:0.95em; color:#ccc;">image_misa.jpg</p>
+        </div>
+      </div>
+      <div class="personnage">
+        <img src="images_chloe/image_ryuk.jpg" alt="Ryuk">
+        <div class="perso-desc">
+          <h3>Ryuk</h3>
+          <p>
+            Dieu de la mort (Shinigami), Ryuk est l’instigateur des événements en laissant tomber son Death Note dans le monde des humains par ennui.
+          </p>
+          <p style="font-size:0.95em; color:#ccc;">image_ryuk.jpg</p>
+        </div>
+      </div>
+      <!-- Ajoute d'autres personnages si besoin -->
+    </div>
+
+    <!-- LIEN RETOUR -->
+    <div style="text-align:center;">
+      <a href="index.html">&larr; Retour à l'accueil</a>
+    </div>
+  </div>
 </body>
 </html>
